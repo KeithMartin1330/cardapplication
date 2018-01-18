@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<body>
+	<div th:if="${message}">
+		<h2 id='cardCode' th:text="${message}" />
+		<!-- <video width="320" height="240" controls="controls">
+			<source id='video' src="files/keith.mp4" type="video/mp4" />
+		</video> -->
+	</div>
+	<script>
+		var a = document.getElementById('cardCode').innerHTML
+		
+		
+		
+		
+		var x = document.createElement("VIDEO");
+
+		if (x.canPlayType("video/mp4")) {
+		    x.setAttribute("src","files/"+a+".mp4");
+		} else {
+		    x.setAttribute("src","keith.mp4");
+		}
+
+		x.setAttribute("width", "320");
+		x.setAttribute("height", "240");
+		x.setAttribute("controls", "controls");
+		document.body.appendChild(x);
+	</script>
+</body>
+</html>

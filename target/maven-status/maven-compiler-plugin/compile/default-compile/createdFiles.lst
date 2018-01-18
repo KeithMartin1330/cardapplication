@@ -1,0 +1,3 @@
+com\mkyong\controller\UploadController.class
+com\mkyong\SpringBootWebApplication.class
+com\mkyong\controller\GlobalExceptionHandler.class
